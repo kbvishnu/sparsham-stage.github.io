@@ -8,7 +8,7 @@ comments: true
 categories: [Sparsham, Prathibha, 2015]
 tags: [Sparsham, Prathibha Scholarships 2015, Calicut]
 header-img: ""
-
+image: "images/2015/prathibha.jpg"
 ---
 
 Prathibha Scholarships are an initiative of Sparsham. We are conducting this scholarship exams only on government schools and 

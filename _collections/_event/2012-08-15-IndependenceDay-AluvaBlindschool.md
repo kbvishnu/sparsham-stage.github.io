@@ -5,10 +5,10 @@ subtitle: "Independence Day Celebrations 2012"
 date: 2012-08-15 03:48
 author: "Sparsham"
 comments: true
-categories: [Sparsham, Independence Day, GHSS Kamballur]
+categories: [Sparsham, Independence Day, GHSS Kamballur,2012]
 tags: [Sparsham,Independence Day,GHSS Kamballur]
 header-img: ""
-
+image: "images/2012/SchoolAluva.jpg"
 ---
 
 Sparsham celebrated Independence day celebrations with the inmates of [Blind School, Aluva]. We reached the premises morning and

@@ -37,7 +37,7 @@ layout: default_post
                       <div class="blog_info text-right">
                           <div class="post_tag">
                               {% for category in page.categories %}
-                                <a href="/tags#{{ category }}" class="label label-primary">{{ category }}</a>
+                                <a href="/category#{{ category }}" class="label label-primary">{{ category }}</a>
                               {% endfor %}
                           </div>
                           <ul class="blog_meta list">
@@ -103,8 +103,8 @@ layout: default_post
                   <aside class="single-sidebar-widget tag_cloud_widget">
                       <h4 class="widget_title">Tag Clouds</h4>
                       <ul class="list">
-                        {% for category in page.categories %}
-		                      <li><a href="/tags#{{ category }}" class="label label-primary">{{ category }}</a></li>
+                        {% for tags in page.tags %}
+		                      <li><a href="/tags#{{ tags }}" class="label label-primary">{{ tags }}</a></li>
 	                      {% endfor %}
                       </ul>
                   </aside>

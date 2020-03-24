@@ -17,7 +17,13 @@ layout: compress
         <link rel="stylesheet" href="vendors/nice-select/css/nice-select.css">
         <!-- main css -->
         <link rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet" href="css/responsive.css">
+		<link rel="stylesheet" href="css/responsive.css">
+		<style>
+			img {
+			  max-width: 100% !important;
+			  max-height: 100% !important;
+		  }
+		  </style>
     </head>
 <body>
         
@@ -64,7 +70,7 @@ layout: compress
 						Extend your hands and join us for developing a new educated and responsible young minds around us.
 					</p>
 					<a class="primary_btn mr-20" href="#Contribute">Contribute Now</a>
-					<a class="primary_btn yellow_btn text-white" href="#features_causes">How we works !</a>
+					<a class="primary_btn yellow_btn text-white" href="#features_causes">How Sparsham works !</a>
 				</div>
 			</div>
 		</div>
@@ -248,7 +254,7 @@ dress and transportation to continue and complete their education, from lower pr
 		<div class="container" id="events">
 			<div class="main_title">
 				<h2>Events</h2>
-				<p style="display:none;">	
+				<p>	
 					<a href="/events">View All</a>					   
 				</p>
 			</div>
@@ -264,7 +270,7 @@ dress and transportation to continue and complete their education, from lower pr
 										{% if item.image== '' or item.image == nil %}
 										{%  assign imgPath ="img/banner/sparshamlogo.png" %}
 										{% else %}
-										{%  assign imgPath ="item.image" %}
+										{%  assign imgPath =item.image %}
 										{% endif %}
 										<img class="img-fluid w-100" src="{{ imgPath }}" alt="Image of {{ item.title }}">
 										<div class="img-overlay"></div>
@@ -528,11 +534,11 @@ dress and transportation to continue and complete their education, from lower pr
 						Also we have an active whatsapp group for EC and for all members.
 						There are three steps.
 						<br />
-						1. Click the 'Join Sparsham' button and fill your the form.
+						1. Click <a href="https://docs.google.com/forms/d/e/1FAIpQLSelgYBKXKG5WQ0ZM0a1pwH-yqGaqkwhuZ0DVpy1Krwko-3YUw/viewform">here</a> to fill and submit the Memebership application form.
 						<br />
-						2. A sparsham member will reach out to you with an official sparsham membership form.
+						2. A Sparsham Memeber will reach to you and introduce the sparsham and its mode of operation and recommends to EC.
 						<br />
-						3. Fill the form and send the form back as pdf file. Wait for the EC approval.
+						3. Executive Committee (EC) makes the decision and communicate to you. 
 						</p>
 					<a href="#" style="display:none !important;" class="primary_btn yellow_btn rounded">Join Sparsham</a>
 				</div>
@@ -574,7 +580,7 @@ dress and transportation to continue and complete their education, from lower pr
 				<div class="col-lg-7">
 					<div class="main_title">
 						<h2>Blog</h2>
-						<p style="display:none">	
+						<p>	
 							<a href="/blogs">View All</a>					   
 						</p>
 					</div>
@@ -590,7 +596,7 @@ dress and transportation to continue and complete their education, from lower pr
 							{% if item.image== '' or item.image == nil %}
 								{%  assign imgPath ="img/banner/sparshamlogo.png" %}
 							{% else %}
-								{%  assign imgPath ="item.image" %}
+								{%  assign imgPath =item.image %}
 							{% endif %}
 							
 							<img class="img-fluid" src="{{ imgPath }}" data="{{ my_variable }}"
@@ -733,10 +739,6 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE"></script>
 	<script src="js/gmaps.min.js"></script>
 	<script src="js/theme.js"></script>
-	<script>
-		$(document).ready(function(){
-			$('#map_canvas > img:not([alt])').attr('alt', 'Alternative text');
-		});
-	</script>
+	 
 </body>
 </html>

@@ -5,9 +5,10 @@ subtitle: "A day visit to kollengode tribal settlement for distribution of relie
 date: 2018-09-07 00:48
 author: "Sparsham"
 comments: true
-categories: [Tribal Settlement, Visits,Distribution]
+categories: [Tribal Settlement, Visits,Distribution,Kerala Floods,2018]
 tags: [Palakkad, Tribal Settlements, Visits, Distribution, Kerala,StandwithKerala]
 header-img: ""
+image: "images/2018/9/KollengodeDistributionKit/Purchase.jpeg"
 ---
 
 

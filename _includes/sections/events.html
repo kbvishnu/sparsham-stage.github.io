@@ -1,0 +1,63 @@
+<section class="banner_area">
+  <div class="banner_inner d-flex align-items-center">
+      <div class="overlay bg-parallax" data-stellar-ratio="0.9" data-stellar-vertical-offset="0" data-background=""></div>
+      <div class="container">
+          <div class="banner_content text-center">
+              <h2>Events</h2>
+              <p></p>
+          </div>
+      </div>
+  </div>
+</section>
+<section class="event_area section_gap_top">
+  <div class="container">
+        <div class="row">
+          {% assign posts = include.items | reverse %}
+          {% for item in posts %}
+            <div class="col-lg-12">
+              <div class="single_event">
+                  <div class="row align-items-center">
+                      <div class="col-lg-4 col-md-4">
+                          <figure>
+                            {% if item.image== '' or item.image == nil %}
+                            {%  assign imgPath ="img/banner/sparshamlogo.png" %}
+                            {% else %}
+                            {%  assign imgPath =item.image %}
+                            {% endif %}
+                              <img class="img-fluid w-100" src="{{imgPath}}" alt="">
+                              <div class="img-overlay"></div>
+                          </figure>
+                      </div>
+                      <div class="col-lg-4 col-md-4">
+                          <div class="content_wrapper">
+                              <h3 class="title">
+                                  <a href="{{ item.url | prepend: site.baseurl}}">{{ item.title }}</a>
+                              </h3>
+                              <p>
+                                {{ item.description }}
+                              </p>
+                              <p>
+                                {{ item.date | date_to_long_string }}
+                              </p>
+                             
+                              <a href="{{ item.url | prepend: site.baseurl}}" class="primary_btn">Learn More</a>
+                          </div>
+                      </div>
+                      <div class="col-lg-4 col-md-4">
+                        <div class="content_wrapper">
+                           
+                                {% for tags in item.tags %}
+                                      <a href="/tags#{{ tags }}"  class="badge">{{ tags }}</a>
+                                  {% endfor %}
+                               
+                        </div>
+                    </div>
+                  </div>
+              </div>
+          </div>         
+          {% endfor %}
+          
+      </div>
+  </div>
+</section>
+

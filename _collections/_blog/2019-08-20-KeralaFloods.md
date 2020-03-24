@@ -5,9 +5,10 @@ subtitle: "Kerala flood relief"
 date: 2019-08-01 00:56
 author: "Sparsham"
 comments: true
-categories: [Kerala floods 2019, സ്നേഹ സ്പർശം]
+categories: [Kerala floods 2019, സ്നേഹ സ്പർശം,2019]
 tags: [Kerald floods, Flood relief activity]
 header-img: ""
+image: "images/2019/IMG_20180603_121617.jpg"
 ---
 
 **പ്രളയബാധിതർക്ക് സ്നേഹ സ്പർശം**

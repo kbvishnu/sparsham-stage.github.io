@@ -5,10 +5,10 @@ subtitle: "Blood Donation Drive"
 date: 2012-10-15 03:48
 author: "Sparsham"
 comments: true
-categories: [Sparsham, Blood Donation Drive, Gandhi Jayanthi]
+categories: [Sparsham, Blood Donation Drive, Gandhi Jayanthi,2012]
 tags: [Sparsham, Blood Donation Drive, Gandhi Jayanthi,Prof.Sanoo MK]
 header-img: ""
-
+image: "images/2012/BloodDonationDrive.JPG"
 ---
 
 We had conducted a blood donation drive as part of our Gandhi Jayanthi Celebrations at Ernakulam District Hospital. The event

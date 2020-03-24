@@ -5,9 +5,10 @@ subtitle: "A day visit to one of the tribal colonies in Palakkad District"
 date: 2018-08-28 23:41
 author: "Sparsham"
 comments: true
-categories: [Tribal Settlement, Visits,Distribution]
+categories: [Tribal Settlement, Visits,Distribution,2018]
 tags: [Palakkad, Tribal Settlements, Visits, Distribution, Kerala,StandwithKerala]
 header-img: ""
+image: "images/2018/TribalVisit_Cover.JPG"
 ---
 
 Tribals in Kerala (Adivasis of Kerala) are the indigenous population found in the southern Indian state of Kerala. 

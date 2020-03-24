@@ -1,0 +1,73 @@
+<section class="banner_area">
+  <div class="banner_inner d-flex align-items-center">
+      <div class="overlay bg-parallax" data-stellar-ratio="0.9" data-stellar-vertical-offset="0" data-background=""></div>
+      <div class="container">
+          <div class="banner_content text-center">
+              <h2>Category</h2>
+              <p></p>
+          </div>
+      </div>
+  </div>
+</section>
+<section class="event_area section_gap_top">
+  <div class="container">
+      
+      <div class="row">
+        {% assign allblogs = site.blog | <additional filtering and sorting> %}	
+        {% assign allevents = site.event | <additional filtering and sorting> %}	
+          {% assign grouptagblog =  allblogs | map: 'categories' | join: ','  | split: ','  | group_by: category  %}
+          {% assign grouptagevent =  allevents | map: 'categories' | join: ','  | split: ','  | group_by: category  %}
+          {% assign alltags = grouptagblog | concat: grouptagevent %}          
+          {% assign alltags_sorted = alltags | map: 'name' | join: ','  | split: ','  | group_by: name | <additional filtering and sorting></additional> %}
+          
+         
+          {%- for tag in alltags_sorted -%}
+              <div class="col-lg-12">
+                <h4 id="{{ tag.name | cgi_escape }}">{{ tag.name }}</h4>
+              </div>
+              {%- for document in allblogs -%}
+                {%- if document.categories contains tag.name -%}                    
+                <div class="col-lg-12">                  
+                      <div class="row">                                
+                          <div class="col-lg-12 float-left">
+                              <div class="col-lg-8 float-left">                               
+                                  <a href="{{ document.url | prepend: site.baseurl}}">{{ document.title }}</a>                              
+                              </div>
+                              <div class="col-lg-4 float-left">
+                                {{ document.date | date_to_long_string }}
+                              </div>
+                          </div>
+                      </div>                  
+                </div> 
+               {%- endif -%}
+              {%- endfor -%}
+              {%- for document in allevents -%}
+                {%- if document.categories contains tag.name -%}
+                <div class="col-lg-12">                  
+                  <div class="row">                                
+                      <div class="col-lg-12 float-left">
+                          <div class="col-lg-8 float-left">                               
+                              <a href="{{ document.url | prepend: site.baseurl}}">{{ document.title }}</a>                              
+                          </div>
+                          <div class="col-lg-4 float-left">
+                            {{ document.date | date_to_long_string }}
+                          </div>
+                      </div>
+                  </div>                  
+            </div> 
+               {% endif %}
+              {%- endfor -%}
+          {%- endfor -%}
+
+          
+
+         
+        
+
+        
+      </div>
+  </div>
+</section> 
+
+
+

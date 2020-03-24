@@ -8,7 +8,7 @@ comments: true
 categories: [Sparsham, Story]
 tags: [Sparsham,How we started]
 header-img: ""
-
+image: "images/2012/theBegin.jpg"
 ---
 A group of friends with similar thoughts gathered an decided to work 
 together by sharing their time, money and dedication to join with millions

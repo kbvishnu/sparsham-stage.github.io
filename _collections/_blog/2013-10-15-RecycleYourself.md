@@ -5,10 +5,10 @@ subtitle: "Recycle yourself"
 date: 2013-10-08 03:48
 author: "Sparsham"
 comments: true
-categories: [Sparsham, Organ donation awarness]
+categories: [Sparsham, Organ donation,Awarness,2013]
 tags: [Sparsham, Organ Donation, Ernakulam]
 header-img: ""
-
+image : "images/2013/OrganDonationDrive.JPG"
 ---
 
 Sparsham conducted an awarness session and organ donation drive on 6th October 2013 at C Achyuthamenon Hall, near Ernakulam Public Library, Ernakulam.
